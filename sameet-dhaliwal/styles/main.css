@@ -1,0 +1,592 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #414141;
+  font-family: "Ubuntu", serif;
+  font-weight: medium;
+  text-transform: uppercase;
+}
+.main-nav {
+  height: 91px;
+  max-width: %100;
+  margin: 0;
+  padding: 0;
+}
+.main-nav ul {
+  float: right;
+  padding-top: 40px;
+}
+.main-nav li {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: uppercase;
+}
+.main-nav a {
+  padding-right: 29px;
+}
+.logo {
+  float: left;
+  margin: 17px 0 0px 30px;
+}
+.logo h1 {
+  font-size: 22px;
+  font-family: "Ubuntu", serif;
+  font-weight: normal;
+  color: #414141;
+}
+.logo span {
+  color: #f36b47;
+}
+.fa-bars {
+  display: none;
+}
+header#home-page-image {
+  width: 100%;
+  height: 490px;
+  background-image: url('../images/plaza-de-espana-sevilla.jpg');
+  overflow: hidden;
+  padding-top: 178px;
+}
+header#home-page-image h1,
+header#home-page-image h2 {
+  width: 40%;
+  margin-left: 30%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Ubuntu", serif;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.7);
+}
+.small-bar {
+  height: 100px;
+  width: 100%;
+  background-color: #f36b47;
+  overflow: hidden;
+}
+.small-bar h3 {
+  font-family: "Ubuntu", serif;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 41px;
+  margin: 0;
+}
+.small-bar span {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.uibrush {
+  width: 100%;
+  overflow: hidden;
+}
+.uibrush h3 {
+  padding-top: 56px;
+  font-family: "Ubuntu", serif;
+  font-size: 26px;
+  color: #606060;
+  text-align: center;
+}
+.uibrush span {
+  border-bottom: 3px solid #f36b47;
+}
+.uibrush p {
+  color: #9d9c9c;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 5%;
+}
+.skills {
+  padding-top: 63px;
+  width: 270px;
+  width: 18%;
+  margin: 0 3%;
+  display: inline-block;
+}
+.skills img {
+  text-align: center;
+  margin: 0 34%;
+}
+.skills h4 {
+  margin: 13%;
+  font-size: 20px;
+  font-family: "PT Sans", serif;
+  font-weight: normal;
+  color: #595959;
+}
+.skills p {
+  color: #9d9c9c;
+  font-family: "Ubuntu", serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.work h3 {
+  padding-top: 56px;
+  font-family: "Ubuntu", serif;
+  font-size: 26px;
+  color: #606060;
+  text-align: center;
+}
+.work span {
+  border-bottom: 3px solid #f36b47;
+}
+.work p {
+  color: #9d9c9c;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 19%;
+  padding-bottom: 34px;
+}
+.image-text-box {
+  width: 18%;
+  margin: 0 3%;
+  display: inline-block;
+  border: 2px solid #e0dddd;
+  background-color: #eeeeee;
+}
+.image-text-box img {
+  width: 100%;
+}
+.image-text-box h5 {
+  border-bottom: 2px solid #d5d4d3;
+  text-align: right;
+  margin-left: 21px;
+  margin-right: 21px;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  color: #f36b47;
+  margin: 13px 9px 13px 9px;
+}
+.image-text-box p {
+  color: #606060;
+  font-family: "Ubuntu", serif;
+  font-size: 12px;
+  float: right;
+  margin: 0px 12px 13px 42px;
+}
+footer {
+  background-color: #f36b47;
+  width: 100%;
+  height: 55px;
+  margin-top: 66px;
+  overflow: hidden;
+}
+footer p {
+  text-align: center;
+  padding-top: 8px;
+  font-family: "Ubuntu", serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+@media (max-width: 780px) {
+  .dropdown {
+    padding-left: 0;
+    margin-right: 200px;
+  }
+  .main-nav ul {
+    padding-top: 90px;
+  }
+  .main-nav li {
+    display: block;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+  .dropdown {
+    display: none;
+    text-align: left;
+  }
+  .dropdown.open {
+    display: block;
+  }
+  .fa-bars {
+    display: block;
+    padding: 29px 35px;
+    float: right;
+  }
+  .work p {
+    padding-bottom: 0;
+  }
+  .image-text-box {
+    width: 43%;
+    margin-top: 33px;
+  }
+  .skills {
+    width: 43%;
+    margin: 0 3%;
+  }
+  .skills img {
+    margin: 0 46%;
+  }
+  .skills h4 {
+    margin: 19px 25%;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .dropdown {
+    padding-left: 0;
+    margin-right: 52px;
+  }
+  .main-nav ul {
+    padding-top: 90px;
+  }
+  .main-nav li {
+    display: block;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+  .dropdown {
+    display: none;
+    text-align: left;
+  }
+  .dropdown.open {
+    display: block;
+  }
+  .fa-bars {
+    display: block;
+    padding: 20px 35px;
+    float: right;
+  }
+  .work p {
+    padding-bottom: 0;
+  }
+  .skills {
+    width: 100%;
+    margin: 0%;
+  }
+  .skills h4 {
+    margin: 5%;
+    text-align: center;
+  }
+  .skills img {
+    margin: 0px 47%;
+  }
+  .image-text-box {
+    width: 93%;
+  }
+}
+header#main-about-image {
+  width: 100%;
+  height: 490px;
+  background-image: url('../images/big-main-image.jpg');
+}
+header#main-about-image h1 {
+  width: 40%;
+  margin-left: 30%;
+  padding-top: 129px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Ubuntu", serif;
+  font-size: 60px;
+  font-weight: normal;
+  margin-top: 0;
+}
+header#main-about-image p {
+  color: #ffffff;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 18%;
+}
+header#main-about-image span {
+  color: #f36b47;
+}
+.aboutus {
+  width: 100%;
+  margin-bottom: 56px;
+}
+.aboutus h3 {
+  padding-top: 40px;
+  font-family: "Ubuntu", serif;
+  font-size: 26px;
+  color: #606060;
+  text-align: center;
+}
+.aboutus span {
+  border-bottom: 3px solid #f36b47;
+}
+.aboutus p {
+  color: #9d9c9c;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 1%;
+}
+.ourteam {
+  width: 100%;
+  height: auto;
+  margin-bottom: 54px;
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+.ourteam h3 {
+  padding-top: 35px;
+  font-family: "Ubuntu", serif;
+  font-size: 26px;
+  color: #606060;
+  text-align: center;
+}
+.ourteam span {
+  border-bottom: 3px solid #f36b47;
+}
+.column {
+  width: 270px;
+  width: 21%;
+  margin: 0 1.7%;
+  display: inline-block;
+}
+.column img {
+  width: 68%;
+  -webkit-border-radius: 140px;
+  text-align: center;
+  margin: 0 16%;
+}
+.column h4 {
+  font-size: 18px;
+  font-family: "Ubuntu", serif;
+  color: #595959;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.column h5 {
+  font-size: 16px;
+  font-family: "Ubuntu", serif;
+  color: #9d9c9c;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.column p {
+  font-size: 14px;
+  font-family: "Ubuntu", serif;
+  color: #9d9c9c;
+  line-height: 20px;
+  text-align: center;
+}
+.ourmission {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.ourmission h3 {
+  font-size: 26px;
+  font-family: "Ubuntu", serif;
+  color: #595959;
+  padding-top: 35px;
+  margin: 0 1%;
+}
+.ourmission span {
+  border-bottom: 3px solid #f36b47;
+}
+.text-left {
+  width: 48%;
+  float: left;
+  margin: 19px 1%;
+}
+.text-left p {
+  font-size: 14px;
+  font-family: "Ubuntu", serif;
+  color: #9d9c9c;
+  line-height: 18px;
+}
+.side-image {
+  width: 46.71%;
+  float: right;
+  margin: 0 1%;
+}
+.side-image img {
+  width: 100%;
+}
+@media (max-width: 780px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .column {
+    width: 46%;
+  }
+  .column img {
+    width: 49%;
+    margin: 0 26%;
+  }
+  .text-left {
+    width: 100%;
+  }
+  .text-left p {
+    line-height: 23px;
+  }
+  .side-image {
+    width: 99%;
+    float: none;
+  }
+  .side-image img {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  header#main-about-image h1 {
+    padding-top: 90px;
+  }
+  .column {
+    width: 100%;
+    margin: 0%;
+  }
+  .column p {
+    line-height: 23px;
+  }
+}
+#big-portfolio-image {
+  width: 100%;
+  height: 490px;
+  background-image: url('../images/night-in-amsterdam.jpg');
+}
+#big-portfolio-image h1 {
+  width: 40%;
+  margin-left: 30%;
+  padding-top: 129px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Ubuntu", serif;
+  font-size: 60px;
+  font-weight: normal;
+  margin-top: 0;
+}
+#big-portfolio-image p {
+  color: #ffffff;
+  font-family: "Ubuntu", serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 18%;
+}
+#big-portfolio-image span {
+  color: #f36b47;
+}
+.our-portfolio-text {
+  width: 100%;
+  overflow: hidden;
+}
+.our-portfolio-text h3 {
+  font-size: 26px;
+  font-family: "Ubuntu", serif;
+  color: #595959;
+  text-align: center;
+  padding-top: 36px;
+}
+.our-portfolio-text span {
+  border-bottom: 3px solid #f36b47;
+}
+.our-portfolio-text p {
+  font-size: 16px;
+  font-family: "Ubuntu", serif;
+  color: #9d9c9c;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 2%;
+}
+.portfolio-nav {
+  width: 100%;
+}
+.portfolio-nav ul {
+  float: left;
+}
+.portfolio-nav li {
+  font-size: 14px;
+  font-family: "Ubuntu", serif;
+  color: #9d9c9c;
+  display: inline-block;
+  padding-right: 3%;
+  margin-top: 62px;
+}
+.portfolio {
+  width: 100%;
+  height: 980px;
+}
+.portfolio .column2 {
+  width: 21%;
+  float: left;
+  text-align: center;
+  margin: 38px 1.5% 0px 2.5%;
+  position: relative;
+}
+.portfolio .column2:hover {
+  background: #000000;
+}
+.portfolio .column2:hover .imageText {
+  display: block;
+  text-align: center;
+}
+.portfolio .column2 .imageText {
+  position: absolute;
+  top: 20px;
+  z-index: 500;
+  display: none;
+  color: #ffffff;
+  width: 100%;
+}
+.portfolio .column2 img {
+  width: 100%;
+}
+.portfolio .column2 img:hover {
+  opacity: 0.5;
+}
+.portfolio .column2 .portfolio-projects img {
+  margin: 1 2px 2px 1;
+  width: 100%;
+}
+@media (max-width: 780px) {
+  .portfolio .column2 {
+    width: 29%;
+  }
+}
+@media (max-width: 480px) {
+  #big-portfolio-image h1 {
+    margin-left: 21%;
+  }
+  .portfolio .column2 {
+    width: 94%;
+  }
+}

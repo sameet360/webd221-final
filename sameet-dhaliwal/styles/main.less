@@ -1,0 +1,754 @@
+// Fonts
+@serif: "Ubuntu", serif;
+@serif2: "PT Sans", serif;
+
+// Colors 
+@white: #fff;
+@grey: #606060;
+@lightgrey: #9d9c9c;
+@smokeygrey: #595959; 
+@darkgrey: #414141;
+@orange: #f36b47;
+@bordercolor: #e0dddd;
+@greybackground: #eeeeee;
+@underlinecolor: #d5d4d3; 
+@whitegrey: #f6f6f6;
+
+// GLOBAL STYLES
+//----------------------------------------------------------
+
+// Fixes Box Model sizing issues
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+//Use this to force clear floated child elements
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+
+ .container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+body {
+	margin: 0;
+}
+
+ // remove default list styles 
+
+ul {
+	margin: 0;
+
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	font-size: 15px;
+	color: @darkgrey;
+	font-family: @serif;
+	font-weight: medium;
+	text-transform: uppercase;
+}
+
+// Header styles 
+
+.main-nav {
+	height: 91px;
+	max-width: %100;
+	margin: 0;
+	padding: 0;
+
+	ul {
+		float: right;
+		padding-top: 40px;
+	}
+
+	li {
+		color: @white;
+		display: inline-block;
+		text-decoration:  uppercase;
+	}
+
+	a {
+		padding-right: 29px;
+	}
+}
+
+.logo {
+		float: left;
+		margin: 17px 0 0px 30px;
+	
+	h1 {
+		font-size: 22px;
+		font-family: @serif;
+		font-weight: normal;
+		color: @darkgrey;
+	}
+
+	span {
+		color: @orange;
+	}
+}
+// List icon - hiding icon
+// will only show at 780px resolution or less
+.fa-bars {
+	display: none;
+}
+
+header#home-page-image {
+	width: 100%;
+	height: 490px;
+	background-image: url('../images/plaza-de-espana-sevilla.jpg');
+	overflow: hidden;
+	padding-top: 178px;
+	
+	h1, h2 {
+		width: 40%;
+		margin-left: 30%;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		text-align: center;
+		color: @white;
+		font-family: @serif;
+		font-weight: normal;
+		background: rgba(0, 0, 0, 0.7);
+	}		
+}	
+
+.small-bar {
+	height: 100px;
+	width: 100%;
+	background-color: #f36b47;
+	overflow: hidden;
+
+	h3 {
+		font-family: @serif;
+		font-size: 20px;
+		color: @white;
+		font-weight: normal;
+		text-align: center;
+		padding-top: 41px;
+		margin: 0;
+	}
+
+	span {
+		text-transform: uppercase;
+		text-decoration: underline;
+
+	}
+}
+
+.uibrush {
+	width: 100%;
+	overflow: hidden;
+
+	h3 {
+		padding-top: 56px;
+		font-family: @serif;
+		font-size: 26px;
+		color: @grey;
+		text-align: center;
+	}
+
+	span {
+		border-bottom: 3px solid @orange;
+	}
+
+	p {
+		color: @lightgrey;
+		font-family: @serif;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		margin: 0 5%;
+	}
+}
+
+.skills {
+	padding-top: 63px;
+	width: 270px;
+	width: 18%;
+	margin: 0 3%;
+	display: inline-block;
+
+	img {
+		text-align: center;
+		margin: 0 34%;
+	}
+
+	h4 {
+		margin: 13%;
+		font-size: 20px;
+		font-family: @serif2;
+		font-weight: normal;
+		color: @smokeygrey;
+	}
+
+	p {
+		color: @lightgrey;
+		font-family: @serif;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}	
+
+.work {
+
+	h3 {
+		padding-top: 56px;
+		font-family: @serif;
+		font-size: 26px;
+		color: @grey;
+		text-align: center;
+	}
+
+	span {
+		border-bottom: 3px solid @orange;
+	}
+
+	p {
+		color: @lightgrey;
+		font-family: @serif;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		margin: 0 19%;
+		padding-bottom: 34px;
+	}
+}
+
+.image-text-box {
+	width: 18%;
+	margin: 0 3%;
+	display: inline-block;
+	border: 2px solid @bordercolor;
+	background-color: @greybackground;
+	
+	img {
+		width: 100%;
+	}
+
+	h5 {
+		border-bottom: 2px solid @underlinecolor;
+		margin-right: 21px;
+		text-align: right;
+		margin-left: 21px;
+		margin-right: 21px;
+		font-family: @serif;
+		font-size: 16px;
+		color: @orange;
+		margin: 13px 9px 13px 9px;
+	}
+
+	p {
+		color: @grey;
+		font-family: @serif;
+		font-size: 12px;
+		float: right;
+		margin: 0px 12px 13px 42px;
+	}
+}
+
+footer {
+	background-color: @orange;
+	width: 100%;
+	height: 55px;
+	margin-top: 66px;
+	overflow: hidden;
+
+	p {
+		text-align: center;
+		padding-top: 8px;
+		font-family: @serif;
+		font-size: 14px;
+		color: @white;
+	}
+}
+
+@media (max-width: 780px) {
+	
+	// Nav section 
+
+	.dropdown {
+		padding-left: 0;
+		margin-right: 200px;
+	}
+
+	.main-nav ul {
+		padding-top: 90px;
+	}
+
+	.main-nav li {
+		display: block;
+		padding-bottom: 24px;
+		text-align: center;
+	}
+
+	.dropdown {
+		display: none;
+		text-align: left;
+
+		&.open {
+			display: block;
+		}
+	}
+	.fa-bars {
+		display: block;
+		padding: 29px 35px;
+		float: right;
+	}
+
+	// CONTENT
+	
+	.work {
+
+		p {
+			padding-bottom: 0;
+		}
+	}
+	
+	.image-text-box {
+		width: 43%;
+		margin-top: 33px;
+	}
+
+	.skills {
+		width: 43%;
+		margin: 0 3%;
+
+		img {
+			margin: 0 46%;
+		}
+
+		h4 {
+			margin: 19px 25%;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	
+	.container {
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+
+	.dropdown {
+		padding-left: 0;
+		margin-right: 52px;
+		}
+
+	.main-nav ul {
+		padding-top: 90px;
+	}
+
+	.main-nav li {
+		display: block;
+		padding-bottom: 24px;
+		text-align: center;
+	}
+
+	.dropdown {
+		display: none;
+		text-align: left;
+
+		&.open {
+			display: block;
+		}
+	}
+	.fa-bars {
+		display: block;
+		padding: 20px 35px;
+		float: right;
+	}
+
+	.work {
+
+		p {
+			padding-bottom: 0;
+		}
+	}
+	
+	.skills {
+		width: 100%;
+		margin: 0%;
+	}
+
+	.skills h4 {
+		margin: 5%; 
+		text-align: center;
+	}
+
+	.skills img {
+		margin: 0px 47%;
+	}
+
+	.image-text-box {
+		width: 93%;
+	}
+
+}
+
+// ABOUT PAGE
+
+header#main-about-image {
+	width: 100%;
+	height: 490px;
+	background-image: url('../images/big-main-image.jpg');
+
+	h1 {
+		width: 40%;
+		margin-left: 30%;
+		padding-top: 129px;
+		text-align: center;
+		color: @white;
+		font-family: @serif;
+		font-size: 60px;
+		font-weight: normal;
+		margin-top: 0;	
+	}
+
+	p {
+		color: @white;
+		font-family: @serif;
+		font-size: 16px;
+		line-height: 25px;
+		text-align: center;
+		margin: 0 18%;
+	}
+
+	span {
+		color: @orange;
+	}
+} 
+
+.aboutus {
+	width: 100%;
+	margin-bottom: 56px;
+
+	h3 {
+		padding-top: 40px;
+		font-family: @serif;
+		font-size: 26px;
+		color: @grey;
+		text-align: center;
+	}
+
+	span {
+		border-bottom: 3px solid @orange;
+	}
+
+	p {
+		color: @lightgrey;
+		font-family: @serif;
+		font-size: 16px;
+		line-height: 25px;
+		text-align: center;
+		margin: 0 1%;	
+	}
+}
+
+.ourteam {
+	width: 100%;
+	height: auto;
+	margin-bottom: 54px;
+	background-color: @whitegrey;
+	overflow: hidden;
+
+	h3 {
+		padding-top: 35px;
+		font-family: @serif;
+		font-size: 26px;
+		color: @grey;
+		text-align: center;
+	}
+
+	span {
+		border-bottom: 3px solid @orange;
+	}
+}
+
+.column {
+	width: 270px;
+	width: 21%;
+	margin: 0 1.7%;
+	display: inline-block;
+
+	img {
+		width: 68%;
+		-webkit-border-radius: 140px;
+		text-align: center;
+		margin: 0 16%;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-family: @serif;
+		color: @smokeygrey;
+		text-align: center;
+		margin-top: 12px;
+		margin-bottom: 8px;
+	}
+
+	h5 {
+		font-size: 16px;
+		font-family: @serif;
+		color: @lightgrey;
+		font-weight: normal;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-size: 14px;
+		font-family: @serif;
+		color: @lightgrey;
+		line-height: 20px;
+		text-align: center;
+	}
+}
+
+.ourmission {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+
+	h3 {
+		font-size: 26px;
+		font-family: @serif;
+		color: @smokeygrey;
+		padding-top: 35px;
+		margin: 0 1%;
+	}
+
+	span {
+		border-bottom: 3px solid @orange;
+	}
+}
+
+.text-left {
+	width: 48%;
+	float: left;
+	margin: 19px 1%;
+
+	p {
+		font-size: 14px;
+		font-family: @serif;
+		color: @lightgrey;
+		line-height: 18px;
+	}
+}
+
+.side-image {
+	width: 46.71%;
+	float: right;
+	margin: 0 1%;
+
+	img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 780px) { 
+
+	.container {
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+	
+	.column {
+		width: 46%;
+
+		img {
+			width: 49%;
+			margin: 0 26%;
+		}
+	}
+
+	.text-left {
+		width: 100%;
+
+		p {
+			line-height: 23px;
+		}
+	}
+
+	.side-image {
+		width: 99%;
+		float: none;
+
+		img {
+			margin-top: 20px;
+		}
+	}
+}
+
+@media (max-width: 480px) { 
+	
+	.container {
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+
+	header#main-about-image h1 {
+			padding-top: 90px;
+	}
+
+	.column {
+		width: 100%;
+		margin: 0%;
+
+		p {
+			line-height: 23px;
+		}
+	}
+}
+
+// OUR PORTFOLIO PAGE
+
+#big-portfolio-image {
+	width: 100%;
+	height: 490px;
+	background-image: url('../images/night-in-amsterdam.jpg');
+
+	h1 {
+		width: 40%;
+		margin-left: 30%;
+		padding-top: 129px;
+		text-align: center;
+		color: @white;
+		font-family: @serif;
+		font-size: 60px;
+		font-weight: normal;
+		margin-top: 0;	
+	}
+
+	p {
+		color: @white;
+		font-family: @serif;
+		font-size: 16px;
+		line-height: 25px;
+		text-align: center;
+		margin: 0 18%;
+	}
+
+	span {
+		color: @orange;
+	}
+}
+
+.our-portfolio-text {
+	width: 100%;
+	overflow: hidden;
+
+	h3 {
+		font-size: 26px;
+		font-family: @serif;
+		color: @smokeygrey;
+		text-align: center;
+		padding-top: 36px;
+	}
+
+	span {
+		border-bottom: 3px solid @orange;
+	}
+
+	p {
+		font-size: 16px;
+		font-family: @serif;
+		color: @lightgrey;
+		line-height: 25px;
+		text-align: center;
+		margin: 0 2%;
+	}
+}
+
+.portfolio-nav {
+	width: 100%;	
+	
+	ul {
+		float: left;
+	}
+
+	li {
+		font-size: 14px;
+		font-family: @serif;
+		color: @lightgrey;
+		display: inline-block;
+		padding-right: 3%;
+		margin-top: 62px;
+	}
+}
+
+.portfolio {
+	width: 100%;
+	height: 980px;
+	
+	.column2 {
+		width: 21%;
+		float: left;
+		text-align: center;
+		margin: 38px 1.5% 0px 2.5%;
+		position: relative;
+		&:hover{
+			background:#000000;
+			.imageText {
+				display: block;
+				text-align: center;
+			}
+		}
+		.imageText{
+			position:absolute;
+			top:20px;
+			z-index:500;
+			display:none;
+			color: @white;
+			width: 100%;
+
+		}
+		img{
+			width: 100%;
+			&:hover{
+				opacity:0.5;
+			}
+		}
+
+		.portfolio-projects img {
+		margin: 1 2px 2px 1;
+		width: 100%;
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	
+	.portfolio .column2 {
+		width: 29%;
+	}
+}
+
+@media (max-width: 480px) {
+
+	#big-portfolio-image h1 {
+		margin-left: 21%;
+	}
+
+	.portfolio .column2 {
+		width: 94%;
+	}
+}
+
+
+
